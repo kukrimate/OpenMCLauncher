@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+	manifest {
+        attributes 'Main-Class': 'me.mateass.omcl.LauncherWindow'
+    }
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+dependencies {
+	compile 'com.google.code.gson:gson:2.3'
+}
