@@ -8,6 +8,7 @@ jar {
 	manifest {
         attributes 'Main-Class': 'me.mateass.omcl.LauncherWindow'
     }
+    
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
