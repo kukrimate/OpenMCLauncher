@@ -17,7 +17,7 @@ public class LogoPanel extends JPanel
 
     public LogoPanel() {
        try {                
-          image = ImageIO.read(LauncherForm.class.getResource("logo.png"));
+          image = ImageIO.read(LauncherForm.class.getResource("/omcl/assets/logo.png"));
        } catch (Exception ex) {
             System.out.println("Missing logo: " + ex.toString());
             System.exit(0);

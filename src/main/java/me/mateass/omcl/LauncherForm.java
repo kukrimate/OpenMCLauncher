@@ -67,8 +67,8 @@ public class LauncherForm extends ImagePanel {
 			Util.writeAccessTokenToProps("null");
 			return;
 		}
-		//Login info print (for Debugging)
-		/**	log.info("Successfull login! accessToken: " + auth.getAccessToken());
+		// Print login info (for Debugging)
+		/*	log.info("Successfull login! accessToken: " + auth.getAccessToken());
 			log.info("profileId: " + auth.getSelectedProfile().getId());
 			log.info("user id: " + auth.getUser().getId());
 			log.info("twitch_access_token: " + auth.getUser().getProperties().get(0).getValue());*/
@@ -111,9 +111,8 @@ public class LauncherForm extends ImagePanel {
 		login.setBounds(210, 140, 100, 30);
 		
 		login.addActionListener(new ActionListener() {
-			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent arg0) {
-				doLogin(username.getText(), password.getText());
+				doLogin(username.getText(), new String(password.getPassword()));
 			}
 		});
 		
@@ -263,8 +262,8 @@ public class LauncherForm extends ImagePanel {
 			return;
 		}
 		
-		//Login info print (for Debugging)
-		/**	log.info("Successfull login! accessToken: " + auth.getAccessToken());
+		// Print login info (for Debugging)
+		/*	log.info("Successfull login! accessToken: " + auth.getAccessToken());
 			log.info("profileId: " + auth.getSelectedProfile().getId());
 			log.info("user id: " + auth.getUser().getId());
 			log.info("twitch_access_token: " + auth.getUser().getProperties().get(0).getValue());*/

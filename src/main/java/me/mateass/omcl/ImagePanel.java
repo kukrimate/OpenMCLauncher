@@ -22,7 +22,7 @@ public class ImagePanel extends JPanel
     setOpaque(true);
     try
     {
-      this.bgImage = ImageIO.read(LauncherForm.class.getResource("bg.png")).getScaledInstance(32, 32, 16);
+      this.bgImage = ImageIO.read(LauncherForm.class.getResource("/omcl/assets/bg.png")).getScaledInstance(32, 32, 16);
     } catch (Exception e) {
      	System.out.println("Missing bg.png: " + e.toString());
      	System.exit(0);
