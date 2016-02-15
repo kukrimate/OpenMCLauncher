@@ -1,6 +1,9 @@
 #OpenMCLauncher
 Open source minecraft launcher. Currently under development and not all functions expected to work correctly.
 
+Screenshot:
+![alt text][logo]
+
 #License
 Copyright (c) 2014-2015 Kukri Máté
 
@@ -22,3 +25,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+[logo]: https://github.com/kukrimate/OpenMCLauncher/raw/master/screenshot.png "Screenshot"
