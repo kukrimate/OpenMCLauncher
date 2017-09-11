@@ -47,7 +47,7 @@ public class GameLauncher extends Thread
 		args.add("-cp");
 		String libraries = "";
 		for (Library lib : version.getLibraries()) {
-			libraries += lib.getPath().toString() + ":";
+			libraries += lib.getPath().toString() + Util.getCpSeparator();
 		}
 		libraries += version.getJar().getPath().toString();
 		args.add(libraries);

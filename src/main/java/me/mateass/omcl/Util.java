@@ -64,6 +64,12 @@ public class Util
 			System.out.println("Exception happend during getting look and feel! Fallback mode! Exception: " + e.toString());
 		}
 	}
+
+	public static String getCpSeparator() {
+		if (getOs() == OS.WIN)
+			return ";";
+		return ":";
+	}
 	
 	public static File getMcDirectory() 
 	{
